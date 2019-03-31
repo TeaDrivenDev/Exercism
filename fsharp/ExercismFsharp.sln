@@ -42,6 +42,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pangram", "pangram\Pangram.
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Etl", "etl\Etl.fsproj", "{C7511E02-FB37-4953-8CD2-46C7C2A0AFF3}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Triangle", "triangle\Triangle.fsproj", "{3F36355E-8388-43BA-92D9-1BC47DC2A788}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -133,6 +135,10 @@ Global
 		{C7511E02-FB37-4953-8CD2-46C7C2A0AFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7511E02-FB37-4953-8CD2-46C7C2A0AFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7511E02-FB37-4953-8CD2-46C7C2A0AFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F36355E-8388-43BA-92D9-1BC47DC2A788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F36355E-8388-43BA-92D9-1BC47DC2A788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F36355E-8388-43BA-92D9-1BC47DC2A788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F36355E-8388-43BA-92D9-1BC47DC2A788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
