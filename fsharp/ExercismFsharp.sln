@@ -12,6 +12,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Allergies", "allergies\Alle
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Clock", "clock\Clock.fsproj", "{00B55C28-BA5E-4177-B80E-399C2313021D}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BeerSong", "beer-song\BeerSong.fsproj", "{66BD9F82-7F2F-4D83-B546-D5ECA34CFD30}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -43,6 +45,10 @@ Global
 		{00B55C28-BA5E-4177-B80E-399C2313021D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B55C28-BA5E-4177-B80E-399C2313021D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B55C28-BA5E-4177-B80E-399C2313021D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BD9F82-7F2F-4D83-B546-D5ECA34CFD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BD9F82-7F2F-4D83-B546-D5ECA34CFD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BD9F82-7F2F-4D83-B546-D5ECA34CFD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BD9F82-7F2F-4D83-B546-D5ECA34CFD30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
