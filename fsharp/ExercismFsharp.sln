@@ -36,6 +36,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RnaTranscription", "rna-tra
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Grains", "grains\Grains.fsproj", "{F4FC06B8-10F2-4BF3-B1C2-8FC4FCB42A7C}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Hamming", "hamming\Hamming.fsproj", "{A92D3D73-C016-4502-85E0-19DEC917E98C}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -115,6 +117,10 @@ Global
 		{F4FC06B8-10F2-4BF3-B1C2-8FC4FCB42A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FC06B8-10F2-4BF3-B1C2-8FC4FCB42A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FC06B8-10F2-4BF3-B1C2-8FC4FCB42A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92D3D73-C016-4502-85E0-19DEC917E98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92D3D73-C016-4502-85E0-19DEC917E98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92D3D73-C016-4502-85E0-19DEC917E98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92D3D73-C016-4502-85E0-19DEC917E98C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
