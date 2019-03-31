@@ -30,6 +30,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GradeSchool", "grade-school
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DifferenceOfSquares", "difference-of-squares\DifferenceOfSquares.fsproj", "{FBF8A52E-369D-4DA1-8AC3-9CC862356099}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Gigasecond", "gigasecond\Gigasecond.fsproj", "{1A2E2688-E5A9-4FFD-BCDD-8D561CFCC700}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -97,6 +99,10 @@ Global
 		{FBF8A52E-369D-4DA1-8AC3-9CC862356099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF8A52E-369D-4DA1-8AC3-9CC862356099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF8A52E-369D-4DA1-8AC3-9CC862356099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2E2688-E5A9-4FFD-BCDD-8D561CFCC700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2E2688-E5A9-4FFD-BCDD-8D561CFCC700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2E2688-E5A9-4FFD-BCDD-8D561CFCC700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2E2688-E5A9-4FFD-BCDD-8D561CFCC700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
