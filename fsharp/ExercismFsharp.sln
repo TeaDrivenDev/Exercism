@@ -62,6 +62,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RomanNumerals", "roman-nume
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AtbashCipher", "atbash-cipher\AtbashCipher.fsproj", "{8A1D5884-0B16-4646-BFA3-57C3C2119C92}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BankAccount", "bank-account\BankAccount.fsproj", "{C121595C-0589-4D90-AD3C-5C250BD7DA0A}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -193,6 +195,10 @@ Global
 		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C121595C-0589-4D90-AD3C-5C250BD7DA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C121595C-0589-4D90-AD3C-5C250BD7DA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C121595C-0589-4D90-AD3C-5C250BD7DA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C121595C-0589-4D90-AD3C-5C250BD7DA0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
