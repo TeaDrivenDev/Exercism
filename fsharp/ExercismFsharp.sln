@@ -60,6 +60,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Acronym", "acronym\Acronym.
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RomanNumerals", "roman-numerals\RomanNumerals.fsproj", "{5C896248-203F-4F38-9A43-4D5C1FBBBFE8}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AtbashCipher", "atbash-cipher\AtbashCipher.fsproj", "{8A1D5884-0B16-4646-BFA3-57C3C2119C92}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -187,6 +189,10 @@ Global
 		{5C896248-203F-4F38-9A43-4D5C1FBBBFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C896248-203F-4F38-9A43-4D5C1FBBBFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C896248-203F-4F38-9A43-4D5C1FBBBFE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1D5884-0B16-4646-BFA3-57C3C2119C92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
