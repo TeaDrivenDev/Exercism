@@ -55,12 +55,12 @@ let buildTree records =
                     parentId, List.map snd children)
                 |> Map.ofList
 
-            let rec helper key =
+            let rec buildSubtree key =
                 mapByParentId
                 |> Map.tryFind key
-                |> Option.map (fun node ->
-                    Branch (key, List.map (fun i -> helper i) node))
+                |> Option.map (fun children ->
+                    Branch (key, List.map buildSubtree children))
                 |> Option.defaultValue (Leaf key)
 
-            let root = helper 0
+            let root = buildSubtree 0
             root
