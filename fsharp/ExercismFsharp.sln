@@ -70,6 +70,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "KindergartenGarden", "kinde
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RobotSimulator", "robot-simulator\RobotSimulator.fsproj", "{B1A887D5-9AC5-40D3-BE9B-5FA1D10D2AAB}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "OcrNumbers", "ocr-numbers\OcrNumbers.fsproj", "{2C200256-6D46-4F06-9E21-416AF4F5D408}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -217,6 +219,10 @@ Global
 		{B1A887D5-9AC5-40D3-BE9B-5FA1D10D2AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1A887D5-9AC5-40D3-BE9B-5FA1D10D2AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1A887D5-9AC5-40D3-BE9B-5FA1D10D2AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
