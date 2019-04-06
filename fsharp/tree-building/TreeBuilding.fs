@@ -20,45 +20,47 @@ let children t =
     | Branch (id, c) -> c
     | Leaf id -> []
 
-let buildTree records =
-    let records' = List.sortBy (fun x -> x.RecordId) records
-
-    if List.isEmpty records' then failwith "Empty input"
-    else
-        let root = records'.[0]
-        if (root.ParentId = 0 |> not) then
-            failwith "Root node is invalid"
+let rec traverse previousId records =
+    match records with
+    | head :: tail ->
+        if head.RecordId <> 0
+           && (head.ParentId > head.RecordId
+               || head.ParentId = head.RecordId)
+        then failwith "Nodes with invalid parents"
         else
-            if (root.RecordId = 0 |> not) then failwith "Root node is invalid"
+            if head.RecordId <> previousId + 1
+            then failwith "Non-continuous list"
             else
-                let mutable prev = -1
-                let mutable leafs = []
+                if head.RecordId = 0
+                then -1, head.RecordId
+                else head.ParentId, head.RecordId
+                :: traverse head.RecordId tail
+    | [] -> []
 
-                for r in records' do
-                    if (r.RecordId <> 0 && (r.ParentId > r.RecordId || r.ParentId = r.RecordId)) then
-                        failwith "Nodes with invalid parents"
-                    else
-                        if r.RecordId <> prev + 1 then
-                            failwith "Non-continuous list"
-                        else
-                            prev <- r.RecordId
-                            if (r.RecordId = 0) then
-                                leafs <- (-1, r.RecordId) :: leafs
-                            else
-                                leafs <- (r.ParentId, r.RecordId) :: leafs
+let buildTree records =
+    let records = List.sortBy (fun x -> x.RecordId) records
 
-                leafs <- List.rev leafs
-                let root = leafs.[0]
+    if List.isEmpty records then failwith "Empty input"
+    else
+        let root = records.[0]
+        if root.ParentId <> 0 || root.RecordId <> 0
+        then failwith "Root node is invalid"
+        else
+            let leaves = traverse -1 records
 
-                let grouped = leafs |> List.groupBy fst |> List.map (fun (x, y) -> (x, List.map snd y))
-                let parens = List.map fst grouped
-                let map = grouped |> Map.ofSeq
+            let mapByParentId =
+                leaves
+                |> List.groupBy fst
+                |> List.map (fun (parentId, children) ->
+                    parentId, List.map snd children)
+                |> Map.ofList
 
-                let rec helper key =
-                    if Map.containsKey key map then
-                        Branch (key, List.map (fun i -> helper i) (Map.find key map))
-                    else
-                        Leaf key
+            let rec helper key =
+                mapByParentId
+                |> Map.tryFind key
+                |> Option.map (fun node ->
+                    Branch (key, List.map (fun i -> helper i) node))
+                |> Option.defaultValue (Leaf key)
 
-                let root = helper 0
-                root
+            let root = helper 0
+            root
