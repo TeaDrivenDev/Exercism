@@ -72,6 +72,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RobotSimulator", "robot-sim
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "OcrNumbers", "ocr-numbers\OcrNumbers.fsproj", "{2C200256-6D46-4F06-9E21-416AF4F5D408}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "TreeBuilding", "tree-building\TreeBuilding.fsproj", "{2A11473B-B24B-4876-A594-2C8D91FAECDA}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
 	ProjectSection(SolutionItems) = preProject
 		UpdateExercismSolution.fsx = UpdateExercismSolution.fsx
@@ -223,6 +225,10 @@ Global
 		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C200256-6D46-4F06-9E21-416AF4F5D408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A11473B-B24B-4876-A594-2C8D91FAECDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A11473B-B24B-4876-A594-2C8D91FAECDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A11473B-B24B-4876-A594-2C8D91FAECDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A11473B-B24B-4876-A594-2C8D91FAECDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
