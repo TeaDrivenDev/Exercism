@@ -1,10 +1,12 @@
 ﻿module Leap
 
-let inline (<&&>) f g x = f x && g x
-let inline (<||>) f g x = f x || g x
+let (|IsDivisibleBy|_|) d n =
+    if n % d = 0 then Some () else None
 
-let isDivisibleBy divisor dividend = dividend % divisor = 0
+let (|NotDivisibleBy|_|) d n =
+    if n % d <> 0 then Some () else None
 
-let leapYear =
-    isDivisibleBy 4
-    <&&> (not << isDivisibleBy 100 <||> isDivisibleBy 400)
+let leapYear (year: int): bool =
+    match year with
+    | IsDivisibleBy 400 | IsDivisibleBy 4 & NotDivisibleBy 100 -> true
+    | _ -> false
