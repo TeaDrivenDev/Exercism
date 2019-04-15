@@ -76,6 +76,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "TreeBuilding", "tree-buildi
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ReverseString", "reverse-string\ReverseString.fsproj", "{A9B9FF69-1269-4053-9C81-A264B5B5B880}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ComplexNumbers", "complex-numbers\ComplexNumbers.fsproj", "{72AECC3A-A979-410B-896E-B7BF9521C93B}"
+EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AllYourBase", "all-your-base\AllYourBase.fsproj", "{EF93F316-F801-4B05-B16F-81B0E7E86EAD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF060CC8-C54D-4962-B3A5-B6CC069B5F18}"
@@ -237,6 +239,10 @@ Global
 		{A9B9FF69-1269-4053-9C81-A264B5B5B880}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9B9FF69-1269-4053-9C81-A264B5B5B880}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9B9FF69-1269-4053-9C81-A264B5B5B880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AECC3A-A979-410B-896E-B7BF9521C93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AECC3A-A979-410B-896E-B7BF9521C93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AECC3A-A979-410B-896E-B7BF9521C93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AECC3A-A979-410B-896E-B7BF9521C93B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF93F316-F801-4B05-B16F-81B0E7E86EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF93F316-F801-4B05-B16F-81B0E7E86EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF93F316-F801-4B05-B16F-81B0E7E86EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
