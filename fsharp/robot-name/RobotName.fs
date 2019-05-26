@@ -2,6 +2,8 @@ module RobotName
 
 let random = System.Random()
 
+type Robot = { Name : string }
+
 let createRandomName () =
     [
         yield! [ 1..2 ]
@@ -11,10 +13,28 @@ let createRandomName () =
     ]
     |> String.concat ""
 
-type Robot = { Name : string }
+let mutable existingNames = Set.empty<string>
+
+let createUniqueRandomName () =
+    let rec innerLoop existingNames =
+        let name = createRandomName ()
+
+        if existingNames |> Set.contains name
+        then innerLoop existingNames
+        else name, existingNames |> Set.add name
+
+    let name, newExistingNames = innerLoop existingNames
+    existingNames <- newExistingNames
+
+    name
 
 let name robot = robot.Name
 
-let mkRobot () = { Name = createRandomName() }
+let mkRobot () = { Name = createUniqueRandomName () }
 
-let reset robot = { robot with Name = createRandomName () }
+let reset robot =
+    let newName = createUniqueRandomName ()
+
+    existingNames <- existingNames |> Set.remove robot.Name
+
+    { robot with Name = newName }
