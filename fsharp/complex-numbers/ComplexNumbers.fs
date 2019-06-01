@@ -1,7 +1,5 @@
 ﻿module ComplexNumbers
 
-open System
-
 type ComplexNumber = { Real : double; Imaginary : double }
 
 let create real imaginary = { Real = real; Imaginary = imaginary }
