@@ -5,6 +5,6 @@ let distance (a : string) (b : string) =
     then
         (a, b)
         ||> Seq.zip
-        |> Seq.fold (fun acc (a, b) -> acc + (if a = b then 0 else 1)) 0
+        |> Seq.sumBy (fun (a, b) -> if a = b then 0 else 1)
         |> Some
     else None
