@@ -1,4 +1,4 @@
-﻿module TreeBuilding
+﻿module TreeBuildingStudent
 
 open TreeBuildingTypes
 
