@@ -75,6 +75,10 @@ type Benchmarks () =
         inputs |> run TreeBuildingBaseline.buildTree
 
     [<Benchmark>]
+    member __.Fastest () =
+        inputs |> run TreeBuildingFastest.buildTree
+
+    [<Benchmark>]
     member __.Mine () =
         inputs |> run TreeBuilding.buildTree
 

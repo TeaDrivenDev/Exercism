@@ -7,7 +7,7 @@ open FsUnit.Xunit
 open System
 
 open TreeBuildingTypes
-open TreeBuildingBaseline
+open TreeBuildingStudent
 
 [<Fact>]
 let ``One node`` () =

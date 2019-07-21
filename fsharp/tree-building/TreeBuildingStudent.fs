@@ -1,6 +1,23 @@
 ﻿module TreeBuildingStudent
 
+open System
+
 open TreeBuildingTypes
+
+let recordId t =
+    match t with
+    | Branch (id, c) -> id
+    | Leaf id -> id
+
+let isBranch t =
+    match t with
+    | Branch (id, c) -> true
+    | Leaf id -> false
+
+let children t =
+    match t with
+    | Branch (id, c) -> c
+    | Leaf id -> []
 
 let rec traverse previousId records =
     match records with

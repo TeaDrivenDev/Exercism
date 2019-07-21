@@ -13,6 +13,7 @@
     <Compile Include="TreeBuildingTypes.fs" />
     <Compile Include="TreeBuildingBaseline.fs" />
     <Compile Include="TreeBuilding.fs" />
+    <Compile Include="TreeBuildingFastest.fs" />
     <Compile Include="TreeBuildingStudent.fs" />
     <Compile Include="TreeBuildingTest.fs" />
     <Compile Include="Benchmark.fs" />
