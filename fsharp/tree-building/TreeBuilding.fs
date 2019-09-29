@@ -37,27 +37,21 @@ let rec traverse previousId records =
 let buildTree records =
     let records = List.sortBy (fun x -> x.RecordId) records
 
-    if List.isEmpty records then failwith "Empty input"
-    else
-        let root = records.[0]
-        if root.ParentId <> 0 || root.RecordId <> 0
+    match records with
+    | [] -> failwith "Empty input"
+    | head :: tail ->
+        if head.ParentId <> 0 || head.RecordId <> 0
         then failwith "Root node is invalid"
         else
-            let leaves = traverse -1 records
-
-            let mapByParentId =
-                leaves
-                |> List.groupBy fst
-                |> List.map (fun (parentId, children) ->
-                    parentId, List.map snd children)
-                |> Map.ofList
+            let leaves = traverse 0 tail
 
             let rec buildSubtree key =
-                mapByParentId
-                |> Map.tryFind key
-                |> Option.map (fun children ->
-                    Branch (key, List.map buildSubtree children))
-                |> Option.defaultValue (Leaf key)
+                leaves
+                |> List.filter (fst >> (=) key)
+                |> function
+                    | [] -> Leaf key
+                    | children ->
+                        Branch (key, children |> List.map (snd >> buildSubtree))
 
             let root = buildSubtree 0
             root
