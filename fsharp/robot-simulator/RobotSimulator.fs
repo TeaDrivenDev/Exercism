@@ -23,15 +23,13 @@ let rotate oldDirection turn =
 let create direction position =
     { direction = direction; position = position }
 
-let move instructions robot =
-    let processInstruction robot instruction =
-        match instruction with
-        | 'A' -> { robot with position = advance robot }
-        | 'L' | 'R' ->
-            { robot with
-                direction = rotate robot.direction instruction }
-        | _ -> failwith "Invalid instruction"
+let processInstruction robot instruction =
+    match instruction with
+    | 'A' -> { robot with position = advance robot }
+    | 'L' | 'R' ->
+        { robot with
+            direction = rotate robot.direction instruction }
+    | _ -> failwith "Invalid instruction"
 
-    (robot, instructions)
-    ||> Seq.fold (fun acc instruction ->
-        processInstruction acc instruction)
+let move instructions robot =
+    Seq.fold processInstruction robot instructions
