@@ -13,7 +13,8 @@ let xquConsonants = trueConsonants |> List.map (fun c -> c + "qu")
 let consonants = specialConsonants @ xquConsonants @ trueConsonants
 
 let (|StartsWith|_|) (values : string list) (word : string) =
-    values |> List.tryFind word.StartsWith
+    values
+    |> List.tryFind word.StartsWith
     |> Option.map (fun c -> c, word.[c.Length..])
 
 let translate (phrase : string) =
